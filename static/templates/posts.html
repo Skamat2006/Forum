@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Forum-CreatePost</title>
+  <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Brawler" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+   
+  </style>
+  <link type="text/css" rel="stylesheet" href="../static/css/style.css" />
+</head>
+
+
+
+<!--+++++++++++ Start of modal ADD POST form ++++++++++-->
+
+<body onload="onload('{{.}}')">
+  <center>
+    <div id="id04">
+      <form class="modal-content animate" action="/createpost" method="post">
+        <div class="imgcontainer">
+          <a href="/"><span onclick="document.getElementById('id04').style.display='none'" class="close"
+            title="Close Modal">&times;</span></a>
+          <img src="../static/assets/forumavatar2.png" id="myavatar" alt="Avatar" class="avatar" style="width: 20%" />
+        </div>
+        <br />
+        <div class="modalPost">
+          <h3 {{.Author}}></h3>
+          <br />
+          <!--The Topics Check Boxes-->
+          <label for="topics" id="topics" name="topics"><b>Forum Topics</b></label><br /><br />
+          <!-- <form class="categories"> -->
+          <input type="checkbox" id="travel" name="category1" value="travel" />
+          <label id="trl" for="travel">Travel</label>
+          <input type="checkbox" id="currentaffairs" name="category2" value="currentaffairs" />
+          <label id="cal" for="currentaffairs">Current affairs</label>
+          <input type="checkbox" id="sport" name="category3" value="sports" />
+          <label id="spl" for="sport">Sport</label>
+          <input type="checkbox" id="hobby" name="category4" value="hobby" />
+          <label id="hol" for="hobby">Hobby</label>
+          <!-- </form> -->
+          <br />
+          <br />
+          <label for="title" id="title"><b>Add Title</b></label><br />
+          <input type="text" placeholder="Enter Title" name="title" required />
+          <form action="action_page.php"></form>
+          <br />
+          <br />
+          <label for="postText" id="postText"><b>Enter Post</b></label>
+          <!--<input type="postText" placeholder="Type your post" name="postText" required>-->
+          <textarea name="postInput" type="text" rows="4" cols="50"></textarea>
+          <form action="action_page.php"></form>
+          <br />
+          <br />
+          <a href="/createpost"><button class="btn cancel" type="submit" id="submitPost">
+              <strong>Submit</strong>
+            </button></a>
+            
+            <right><a href="/"><button style="position: absolute; right: 200px; border-color:blue; color:blue;  " class="btn cancel" type="submit" id="toHomepage"><strong>Cancel</strong></button></a></right>
+          
+          <br><br><br>
+        </div>
+      </form>
+      
+    </div>
+  <img id="footerimg" src="../static/assets/01Founderscrop2.png" alt="01founders" style="width:10%;">
+  </center>
+  <!-- {{if .}}
+  {{.}}
+  {{end}} -->
+  <script>
+    const onload = (error) => {
+      if (error) {
+        alert(error)
+      }
+    }
+  </script>
+  <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^ End of modal ADD POST form ^^^^^^^^^^^^^^^^^^^-->
+  <!-- To upload a file: https://www.w3schools.com/html/html_form_input_types.asp -->
+
+</html>

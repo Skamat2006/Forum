@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Forum-Register</title>
+  <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Brawler" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link type="text/css" rel="stylesheet" href="../static/css/style.css" />
+</head>
+
+<!--+++++++++++ Start of modal REGISTER form ++++++++++-->
+<!--<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h2, initial-scale=1.0" />
+    <title>Document</title>
+  </head>-->
+
+<body>
+  <center>
+    <div id="id02" class="modal-content animate">
+      <form class="modal-content animate" action="/registerauth" method="post">
+
+        <div class="containerRGS">
+          <table>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <th cellPadding="30px">Account Registration</th>
+           </tr>
+            <tr>
+              <td>
+                <ul id="regInstructions">
+                  <li><small>Username must contain only letters or numbers</small></li>
+                  <li><small>
+                      Username must be longer than 5 characters but shorter than 15
+                    </small></li>
+                  <li><small>
+                      Password must contain an uppercase letter, lowercase letter,
+                      number and special character
+                    </small></li>
+                  <li><small>
+                    Password must be greater than 8 characters but shorter than 20
+                  </small></li>
+                </td>
+              </tr>
+          </table>
+
+          <form action="/registerauth" method="POST">
+            <label for="username">Username:</label><br />
+            <input type="username" placeholder="Enter username" name="username" id="username" required /><br />
+            <br>
+            <label for="email">Email:</label><br />
+            <input type="text" placeholder="Enter Email" name="email" id="email" required /><br />
+            <br>
+            <label for="password">Password:</label><br />
+            <input type="password" placeholder="Password" name="password" id="password" required /><br />
+            <br>
+            <a><button  style="display:block;" type="submit" class="registerBtn" href="/session.html">
+                <strong>Register</strong>
+              </button></a>
+            <br>
+            <br>
+
+            <div style="text-align:left; padding-left: 10px"; class="containerRGS">
+              <a href="/">Cancel</a>
+              <span class="psw" id="psw" style="background-color: silver; padding-right: 10px;"><small>Already have an account?
+              </small><a href="/login">Login </a></span>
+
+            </div>
+          </form>
+          <br /><br />
+          <!--  {{if .}}
+        {{.}}
+    {{end}}-->
+        </div>
+      </form>
+    </div>
+  <img id="footerimg" src="../static/assets/01Founderscrop2.png" alt="01founders" style="width:10%;">
+  </center>
+</body>
+
+</html>

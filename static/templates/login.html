@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forum-Login</title>
+    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Brawler"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style></style>
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+
+  <!-- ++++++++ Start of Modal Login Form +++++++++ -->
+
+  <body>
+    <div id="id02">
+    <nav class="Navbar">
+      <form class="modal-content animate" action="/loginauth" method="POST">
+        <div style="background-color:silver" class="imgcontainer">
+          <a href="/"><span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span></a>
+        
+      <div class="Navbar-buttons">
+        <div style="background-color:silver" id="Not_Login" class="Not_Login">
+          <!-- {{if .CookieChecker}} -->
+          <span
+            ><button id="homeBtn" class="navBarbtns">
+              <a href="/">Home</a>
+            </button></span
+          >
+          <span
+            ><button id="logoutBtn" class="navBarbtns">
+              <a href="/logout">Log Out</a>
+            </button></span
+          >
+          <span
+            ><button id="newpostBtn" class="navBarbtns">
+              <a href="/createpost">+Create Post</a>
+            </button></span
+          >
+          <!-- {{else}} -->
+          <span
+            ><button id="homeBtn" class="navBarbtns">
+              <a href="/">Home</a>
+            </button></span
+          >
+          <!--<span //Removed this button as we already are on the Login page
+            ><button id="logBtn" class="navBarbtns">
+              <a href="/login">Login</a>
+            </button></span
+          >-->
+          <span
+            ><button id="registerBtn" class="navBarbtns">
+              <a href="/register">Register</a>
+            </button></span
+          >
+          <center><img src="../static/assets/forumavatar2.png" id="myavatar" alt="Avatar" class="avatar" style="width: 20%"  /></center>
+          <!-- {{end}} -->
+    
+    <center>
+      <div style="background-color: silver" id="id01">
+        
+          <br />
+          <div class="loginContainer">
+            <label for="username" id="username"><b>Username</b></label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="username"
+              required
+            />
+            <br />
+            <br />
+            <label for="password" id="password"><b>Password</b></label>
+            <br />
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              required
+            />
+            <br />
+            <br />
+
+            <div>
+              <input
+                type="submit"
+                id="submit"
+                class="accountSubmit"
+                value="Submit"
+              />
+            </div>
+
+            <br />
+            <label id="remember">
+              <input type="checkbox" name="remember" id="remember" />
+              Remember me
+            </label>
+          </div>
+          <br />
+
+          <div class="loginContainer" style="background-color: silver">
+            <a href="/"><small>Cancel</small></a>
+            <br />
+
+            <div id="register-link" class="text-right">
+              <a
+                href="../register"
+                class="text-info"
+                style="background-color: silver"
+                ><small>Register here</small></a
+              >
+            </div>
+            <br />
+            <br />
+          </div>
+          </div>
+          </center>
+          </div>
+          </div>
+          </div>
+        </form>
+      </nav>
+    </div>
+  </body>
+</html>
+
+<!--+++++++++++++ End of modal Login Form ++++++++++++++++++++-->

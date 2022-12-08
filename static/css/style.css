@@ -1,0 +1,806 @@
+.ScrollStyle {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+/*the footer container */
+.container {
+  position: relative;
+}
+
+body {
+  font-family: "Brawler";
+  font-size: 20px;
+}
+
+.header{
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.post {
+  border: 3px solid #888;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: #f8efbd;
+  padding: 20px 25px;
+}
+
+.post_info {
+  border: 3px solid #888;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: #fffff0;
+  padding: 20px 25px;
+}
+/*the text box inside footer's image */
+.text-block {
+  background-color: aqua;
+  color: blue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pagecolor {
+  background-color: silver;
+}
+
+/*Login, Register, Logout buttons*/
+.headerbtn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/*the 'Home' button*/
+.btnHome {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn :hover {
+  background-color: aquamarine;
+}
+.btn {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.forumName {
+  color: blue;
+  float: center;
+}
+
+.btn1 {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* On mouse-over */
+.btn1:hover {
+  background: #eee;
+}
+
+.travel {
+  color: green;
+}
+.currentaffairs {
+  color: dodgerblue;
+}
+.sport {
+  color: orange;
+}
+.hobby {
+  color: red;
+}
+
+.comment {
+  color: blue;
+}
+
+/* #footerimg {
+  height: 50%;
+  width: 50%;
+} */
+
+/*$$$$$$$$$$$$$$$$ Modal Login Form $$$$$$$$$$$$$$$$ */
+/* The Modal (background) */
+
+/* $$$$$$$$$$$$$$$$ Start of CSS for final Login page $$$$$$$$$$$ */
+#myavatar {
+  background-size: 150px;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  padding-top: 15px;
+}
+
+/*enter pw input box*/
+
+#enterpw {
+  color: rgb(12, 5, 150);
+}
+
+/*format the 'forgot pwd' button*/
+#password {
+  color: rgb(12, 5, 150);
+  float: center;
+}
+
+#username {
+  color: rgb(12, 5, 150);
+}
+
+.block {
+  display: block;
+  width: 80%;
+  border: none;
+  background-color: aqua;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(12, 5, 150);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#remember {
+  color: rgb(12, 5, 150);
+}
+
+.cancel {
+  /* Blue */
+  border-color: #2196f3;
+  color: dodgerblue;
+  float: left;
+}
+
+.cancel:hover {
+  background: #2196f3;
+  color: white;
+}
+
+#psw {
+  float: right;
+  padding-top: 15px;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 60%;
+  /* Could be more or less, depending on screen size */
+  height: fit-content;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/*$$$$$$$$$$$$$$$$ End of CSS for final login page $$$$$$$$$$$$$$$$*/
+
+#myavatar {
+  background-size: 150px;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  padding-top: 15px;
+}
+
+/*enter pw input box*/
+
+#enterpw {
+  color: rgb(12, 5, 150);
+}
+
+/*format the 'forgot pwd' button*/
+#password {
+  color: rgb(12, 5, 150);
+  float: center;
+}
+
+#username {
+  color: rgb(12, 5, 150);
+}
+
+.block {
+  display: block;
+  width: 80%;
+  border: none;
+  background-color: aqua;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(12, 5, 150);
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#remember {
+  color: rgb(12, 5, 150);
+}
+
+.cancel {
+  /* Blue */
+  border-color: #2196f3;
+  color: dodgerblue;
+  float: left;
+}
+
+.cancel:hover {
+  background: #2196f3;
+  color: white;
+}
+
+#psw {
+  float: right;
+  padding-top: 15px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: fit-content;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*$$$$$$$$$$$$$$$$ End of Modal Login Form $$$$$$$$$$$$$$$$ */
+
+/*££££££££££££££££££££ Start of Register Form ££££££££££££££££££*/
+.registerpagecolor {
+  background-color: aqua;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*apply blue color to text*/
+.regtextcolor {
+  color: rgb(12, 5, 150);
+  background-color: aqua;
+  float: left;
+  font-size: 24px;
+}
+
+/*Style the title of the Registration form*/
+#regtextcolor {
+  color: rgb(12, 5, 150);
+  background-color: aqua;
+  float: center;
+  font-size: 24px;
+}
+
+/*hide terms & conditions text. Not used?*/
+#termsconditions {
+  color: aqua;
+}
+
+#reginstructions {
+  color: rgb(12, 5, 150);
+  font-size: 18px;
+  text-size-adjust: 80%;
+  float: left;
+}
+
+/* using css re-set to override ul padding and left-align li in the Register form */
+* {
+  margin: 15;
+  padding: 15;
+}
+
+/*apply dark colour to links*/
+#links {
+  color: rgb(5, 2, 66);
+}
+
+/* Add padding to containers */
+.containerPosts {
+  padding: 16px;
+}
+
+/* background colour for Register modal form */
+.containerRGS {
+  background-color: silver;
+}
+
+/* Full-width Username input field*/
+input[type="text"],
+input[type="username"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="username"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerBtn {
+  display: block;
+  width: 100%;
+  background-color: rgb(12, 5, 150);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.registerBtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* the top-right 'X' to close the 'Register' modal */
+.close-icon i {
+  font-size: 60%;
+  color: red;
+  float: right;
+  cursor: pointer;
+}
+
+/* £££££££££££££££££ End of Register Form £££££££££££££££££ */
+
+/*~~~~~~~~~~~~~~ Homepage's Posts by Nathan ~~~~~~~~~~~~~~~~~~~~*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+  background: aqua;
+  color: mediumblue;
+}
+
+a {
+  color: midnightblue;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+/* home.html */
+
+.containerPosts {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Center the Posts on the Homepage */
+.center {
+  margin-left: 110px;
+  margin-right: auto;
+}
+
+.subforum {
+  margin-top: 10px;
+}
+
+.subforum-title {
+  background-color: grey;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.subforum-description {
+  margin-block: 0;
+}
+
+.subforum-row {
+  display: grid;
+  grid-template-columns: 18% 60% 13% 20%;
+}
+
+.subforum-column {
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  border-color: silver;
+  background-color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subforum-divider {
+  background-color: aqua;
+}
+
+/* for smartphones*/
+@media screen and (max-width: 460) {
+  .containerPosts {
+    margin: 10px;
+    padding: 10px;
+  }
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+  }
+  .subforum-stats {
+    font-size: 12px;
+  }
+  .subforum-divider {
+    display: block;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(
+      to right light,
+      dark rgb(92, 92, 92),
+      rgb(20, 20, 20)
+    );
+  }
+}
+
+/* for tablets */
+
+@media screen and (min-width: 460px) and (max-width: 1021px) {
+  .containerPosts {
+    margin: 15px;
+    padding: 15px;
+  }
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 10% 60% 10% 20%;
+  }
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+}
+
+header {
+  margin-inline: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  background-color: dark red;
+  padding: 10px;
+  width: 65%;
+  display: inline-block;
+  border-radius: 5px;
+  max-height: 80%;
+  margin-right: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.nav-list a {
+  float: right;
+  display: block;
+  text-align: center;
+  margin-inline: 20px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.likedislike {
+  float: right;
+}
+
+/*~~~~~~~~~~~~End of Nathan's posts ~~~~~~~~~~~~~~~~~~~*/
+
+/* ~~~~~~~~~~~~~~~~Start of Adding a Post modal ~~~~~~~~~~~~~~~~~*/
+
+/* ~~~~~~~~~~~~~~~Start of final Adding a Post modal ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Adding a Post modal */
+
+.topics {
+  float: center;
+}
+
+.modalPost {
+  color: darkblue;
+}
+
+.submitPost {
+  background-color: aqua;
+}
+
+.toHomepage {
+  background-color: silver;
+  float: right;
+}
+
+#trl {
+  color: green;
+}
+
+#cal {
+  color: dodgerblue;
+}
+
+#spl {
+  color: orange;
+}
+
+#hol {
+  color: red;
+}
+
+/* Enter Post area */
+
+/*
+* {
+box-sizing: border-box;
+}
+
+/*make form heading colour blue */
+#commHead {
+  color: blue;
+  font-size: 18px;
+}
+
+/*~~~~~~~~~~~~~~~~End of final Adding a Post modal ~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*align right the cancel button */
+#toHomepage {
+  float: right;
+}
+
+.toHomepage:hover {
+  background:dodgerblue;
+  color: white;
+}
+
+.topics {
+  float: center;
+}
+
+.modalPost {
+  color: darkblue;
+}
+
+.submitPost {
+  background-color: aqua;
+}
+
+#trl {
+  color: green;
+}
+#cal {
+  color: dodgerblue;
+}
+#spl {
+  color: orange;
+}
+#hol {
+  color: red;
+}
+
+/* Enter Post area */
